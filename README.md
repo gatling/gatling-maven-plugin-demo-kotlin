@@ -1,8 +1,16 @@
-gatling-maven-plugin-demo-kotlin
-================================
+Gatling plugin for Maven - Kotlin demo project
+==============================================
 
-Simple showcase of a Kotlin maven project using the gatling-maven-plugin.
+A simple showcase of a Maven project using the Gatling plugin for Maven. Refer to the plugin documentation
+[on the Gatling website](https://gatling.io/docs/current/extensions/maven_plugin/) for usage.
 
-To test it out, execute the following command:
+This project is written in Kotlin, others are available for [Java](https://github.com/gatling/gatling-maven-plugin-demo-java)
+and [Scala](https://github.com/gatling/gatling-maven-plugin-demo-scala).
 
-    $mvn gatling:test
+It includes:
+
+* minimal `pom.xml`
+* latest version of `io.gatling:gatling-maven-plugin` applied
+* sample [Simulation](https://gatling.io/docs/gatling/reference/current/general/concepts/#simulation) class,
+  demonstrating sufficient Gatling functionality
+* proper source file layout
