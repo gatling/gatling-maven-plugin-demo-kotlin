@@ -1,7 +1,6 @@
 import io.gatling.recorder.GatlingRecorder
 import io.gatling.recorder.config.RecorderPropertiesBuilder
 import scala.Option
-import java.nio.file.Path
 
 object Recorder {
 
@@ -11,7 +10,8 @@ object Recorder {
             .simulationsFolder(IDEPathHelper.mavenSourcesDirectory.toString())
             .resourcesFolder(IDEPathHelper.mavenResourcesDirectory.toString())
             .simulationPackage("computerdatabase")
+            .simulationFormatKotlin()
 
-    GatlingRecorder.fromMap(props.build(), Option.apply<Path>(IDEPathHelper.recorderConfigFile))
+    GatlingRecorder.fromMap(props.build(), Option.apply(IDEPathHelper.recorderConfigFile))
   }
 }
