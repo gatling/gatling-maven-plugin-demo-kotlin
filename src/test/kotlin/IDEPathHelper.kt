@@ -1,8 +1,9 @@
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.util.Objects.requireNonNull
 
 object IDEPathHelper {
-  private val projectRootDir = Paths.get(javaClass.getResource("gatling.conf").toURI()).parent.parent.parent
+  private val projectRootDir = Paths.get(requireNonNull(javaClass.getResource("gatling.conf"), "Couldn't locate gatling.conf").toURI()).parent.parent.parent
   private val mavenTargetDirectory: Path = projectRootDir.resolve("target")
   private val mavenSrcTestDirectory: Path = projectRootDir.resolve("src").resolve("test")
 
