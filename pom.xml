@@ -5,12 +5,12 @@
 
   <groupId>io.gatling.demo</groupId>
   <artifactId>gatling-maven-plugin-demo-kotlin</artifactId>
-  <version>3.9.0</version>
+  <version>3.9.1</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <gatling.version>${project.version}</gatling.version>
-    <gatling-maven-plugin.version>4.2.9</gatling-maven-plugin.version>
+    <gatling-maven-plugin.version>4.3.0</gatling-maven-plugin.version>
     <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
     <kotlin.version>1.7.0</kotlin.version>
   </properties>
